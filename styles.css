@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 10px 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.hero button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.product-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.product-highlights .highlight {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-highlights h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-highlights p {
+    font-size: 14px;
+}
+
+.testimonials, .how-it-works, .cta {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (min-width: 600px) {
+    header nav ul {
+        flex-direction: row;
+    }
+
+    .product-highlights {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .product-highlights .highlight {
+        width: 30%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
