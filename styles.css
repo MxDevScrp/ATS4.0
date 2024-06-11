@@ -7,7 +7,7 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #007BFF;
@@ -22,14 +22,12 @@ header .logo {
 header nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 header nav ul li {
-    margin: 10px 0;
+    margin-left: 20px;
 }
 
 header nav ul li a {
@@ -46,20 +44,20 @@ header nav ul li a {
 
 .hero h1 {
     margin: 0 0 20px;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .hero p {
-    font-size: 16px;
-    margin: 0 0 20px;
+    font-size: 18px;
+    margin: 0 0 30px;
 }
 
 .hero button {
     background-color: #007BFF;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 15px 30px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -69,32 +67,65 @@ header nav ul li a {
     margin-top: 20px;
 }
 
-.product-highlights {
+.value-propositions {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     padding: 20px;
     background-color: #f4f4f4;
 }
 
-.product-highlights .highlight {
-    width: 80%;
+.value-propositions .proposition {
+    width: 45%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.product-highlights h2 {
-    font-size: 20px;
+.value-propositions h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.product-highlights p {
-    font-size: 14px;
+.value-propositions p {
+    font-size: 16px;
 }
 
-.testimonials, .how-it-works, .cta {
+.free-trial {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffeeba;
+}
+
+.free-trial h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.free-trial p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.free-trial button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta {
     text-align: center;
     padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.cta button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 footer {
@@ -118,32 +149,4 @@ footer .social-media a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-}
-
-@media (min-width: 600px) {
-    header nav ul {
-        flex-direction: row;
-    }
-
-    .product-highlights {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .product-highlights .highlight {
-        width: 30%;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .hero button {
-        padding: 15px 30px;
-        font-size: 16px;
-    }
 }
