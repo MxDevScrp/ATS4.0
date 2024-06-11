@@ -36,6 +36,35 @@ header nav ul li a {
     font-weight: bold;
 }
 
+.value-propositions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.value-propositions .proposition {
+    width: 45%;
+    text-align: left;
+}
+
+.value-propositions .candidates {
+    text-align: left;
+}
+
+.value-propositions .companies {
+    text-align: right;
+}
+
+.value-propositions h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.value-propositions p {
+    font-size: 16px;
+}
+
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -67,45 +96,36 @@ header nav ul li a {
     margin-top: 20px;
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 20px;
-    background-color: #fff;
-}
-
-.features .feature {
-    width: 30%;
+.free-trial {
     text-align: center;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-.features h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.features p {
-    font-size: 16px;
-}
-
-.cta {
-    text-align: center;
-    padding: 50px 20px;
     background-color: #ffeeba;
+    margin-top: 20px;
 }
 
-.cta h2 {
+.free-trial h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-.cta p {
+.free-trial p {
     font-size: 18px;
     margin-bottom: 20px;
+}
+
+.free-trial button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 .cta button {
